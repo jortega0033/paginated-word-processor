@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 A local workbench for a writer of a short report: edit ordered blocks with an A4 preview, save and resume one draft, print a PDF, and exchange a small DOCX profile that opens in LibreOffice Writer. Python 3 standard library, `127.0.0.1` only, bundled browser assets, original sample reports.
 
-**Only the scaffold exists; there is no product behaviour yet.** The repository holds the plan, the delivery tooling, the runnable scaffold and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists; there is no product behaviour yet.** The repository holds the plan, the delivery tooling, the runnable scaffold and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing product baseline: only the scaffold smoke tests exist.
 
 ## Sources of truth
 
