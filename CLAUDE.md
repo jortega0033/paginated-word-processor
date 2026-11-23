@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 A local workbench for a writer of a short report: edit ordered blocks with an A4 preview, save and resume one draft, print a PDF, and exchange a small DOCX profile that opens in LibreOffice Writer. Python 3 standard library, `127.0.0.1` only, bundled browser assets, original sample reports.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists; there is no product behaviour yet.** The repository holds the plan, the delivery tooling, the runnable scaffold and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing product baseline: only the scaffold smoke tests exist.
 
 ## Sources of truth
 
@@ -19,7 +19,7 @@ A local workbench for a writer of a short report: edit ordered blocks with an A4
 | Project subagents, origin and local changes | [.claude/agency-agents/README.md](.claude/agency-agents/README.md) |
 | Ticket workflow and the step at which each role runs | [.claude/skills/implement-ticket/SKILL.md](.claude/skills/implement-ticket/SKILL.md), section "Agent roles" below |
 | How a ticket goes from the queue to a ready pull request, who may do what | "Delivery workflow" below |
-| UI and copy rules | [docs/ui-quality.md](docs/ui-quality.md) |
+| UI and copy rules, design tokens | [docs/ui-quality.md](docs/ui-quality.md), [docs/design-tokens.md](docs/design-tokens.md) |
 | Decisions the owner made, with dates | [docs/owner-decisions.md](docs/owner-decisions.md) |
 
 The plan wins for product design; the epic and tickets win for order and scope. A ticket that changes a contract fixes the plan in the same pull request.
@@ -40,9 +40,9 @@ Python 3.12 or 3.13; Node 22 for the planner tests. No install step is needed.
 
 | Purpose | Command | Status |
 |---|---|---|
-| Tests | `python -m unittest discover -s tests` | planned: real with the scaffold |
-| Planner tests | `node --test` | planned: real with the scaffold |
-| Help and version | `python -m word_processor --help` | planned: real with the scaffold |
+| Tests | `python -m unittest discover -s tests` | real (scaffold) |
+| Planner tests | `node --test` | real (scaffold) |
+| Help and version | `python -m word_processor --help` | real (scaffold) |
 | Run the app | `python -m word_processor serve --port 8766 --data-dir ./data` | planned: #2 |
 
 ## Architecture boundaries
@@ -118,7 +118,7 @@ How a ticket reaches the owner. Each piece is described in its own file; this pa
 - **Pull request:** [`.github/pull_request_template.md`](.github/pull_request_template.md). Tickets use [`.github/ISSUE_TEMPLATE/implementation-ticket.md`](.github/ISSUE_TEMPLATE/implementation-ticket.md).
 - **Labels:** `status:ready`, `status:blocked`, `status:in-progress`, `needs-decision`, `tracking` (parent container, never worked; its sub-issues are the work items).
 - **Changelog:** every ticket pull request adds one line under Unreleased in [CHANGELOG.md](CHANGELOG.md).
-- **UI and copy:** [docs/ui-quality.md](docs/ui-quality.md); the `ui-ux-pro-max` and `unslop` skills are in `.claude/skills/`.
+- **UI and copy:** [docs/ui-quality.md](docs/ui-quality.md); the `ui-ux-pro-max` and `unslop` skills are in `.claude/skills/`. Colours come from the shared design tokens in `word_processor/static/tokens.css` ([docs/design-tokens.md](docs/design-tokens.md)); new UI adds no colour literals.
 - **Decisions:** [docs/owner-decisions.md](docs/owner-decisions.md). Security reports: [SECURITY.md](SECURITY.md).
 - **Merge and release:** only the owner merges and releases ([docs/RELEASING.md](docs/RELEASING.md)). An agent stops at a ready pull request.
 
