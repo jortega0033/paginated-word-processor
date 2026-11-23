@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 A local workbench for a writer of a short report: edit ordered blocks with an A4 preview, save and resume one draft, print a PDF, and exchange a small DOCX profile that opens in LibreOffice Writer. Python 3 standard library, `127.0.0.1` only, bundled browser assets, original sample reports.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists; there is no product behaviour yet.** The repository holds the plan, the delivery tooling, the runnable scaffold and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 
@@ -40,9 +40,9 @@ Python 3.12 or 3.13; Node 22 for the planner tests. No install step is needed.
 
 | Purpose | Command | Status |
 |---|---|---|
-| Tests | `python -m unittest discover -s tests` | planned: real with the scaffold |
-| Planner tests | `node --test` | planned: real with the scaffold |
-| Help and version | `python -m word_processor --help` | planned: real with the scaffold |
+| Tests | `python -m unittest discover -s tests` | real (scaffold) |
+| Planner tests | `node --test` | real (scaffold) |
+| Help and version | `python -m word_processor --help` | real (scaffold) |
 | Run the app | `python -m word_processor serve --port 8766 --data-dir ./data` | planned: #2 |
 
 ## Architecture boundaries

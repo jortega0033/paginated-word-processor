@@ -1,0 +1,6 @@
+[project]
+name = "word-processor"
+version = "0.0.0"
+description = "Local paginated word processor workbench."
+requires-python = ">=3.12"
+dependencies = []
