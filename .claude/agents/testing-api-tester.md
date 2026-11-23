@@ -8,7 +8,7 @@ vibe: Breaks your API before your users do.
 
 ## In this repository
 
-**Project.** Paginated Word Processor: an offline editor for short paginated reports. Python 3 standard library, one loopback process serving bundled HTML, CSS and JavaScript, A4 preview and print from one page manifest, a bounded DOCX profile, Chrome for the browser. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Python and Node 22 are installed on the owner's PC, so every command runs locally and in CI; record both. LibreOffice checks are owner checks unless Writer is found.
+**Project.** Paginated Word Processor: an offline editor for short paginated reports. Python 3 standard library, one loopback process serving bundled HTML, CSS and JavaScript, A4 preview and print from one page manifest, a bounded DOCX profile, Chrome for the browser. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Python and Node 22 are installed on the owner's PC, so every command runs locally and in CI; record both. LibreOffice checks are owner checks unless Writer is found.
 
 **Your job here.** You write HTTP-level tests against a real server on a free loopback port: status codes, error shape, caps and the fixture values. Operations: get and put document, import, export.
 
