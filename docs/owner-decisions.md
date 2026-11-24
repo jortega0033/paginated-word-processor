@@ -37,3 +37,13 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #6 | Entity safety | DTD and entity declarations are rejected on the bytes before the XML parser runs. |
 | #7 | Writer check | `soffice --headless --convert-to pdf` with a disposable profile when Writer is installed; otherwise an owner check. CI installs nothing. |
 | none | Licence | MIT, added by the owner on 2026-11-23 (`LICENSE`). No ticket changes it. |
+
+## Program decisions (owner, 2026-11-24)
+
+The owner accepted the goal and each suggestion below. They apply from the phase they name; the rules of `CLAUDE.md` hold for phase 1 as written.
+
+| Decision | Implemented in |
+|---|---|
+| The repository has a program goal above phase 1: a word processor measured against other word processors, in six phases. | Program issue #40 |
+| The corpus must be reusable. Suggested: own documents plus public-domain ones, with their origin listed. | Program issue #40 |
+| Standard-library Python stays for the server; the layout engine is browser code, as now. | Program issue #40 |

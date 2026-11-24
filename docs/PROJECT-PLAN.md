@@ -1,5 +1,7 @@
 # Paginated Word Processor
 
+> This document specifies phase 1 of the program in [#40](https://github.com/jortega0033/paginated-word-processor/issues/40). Hour figures in it are early estimates for that phase; its open tickets add up to 66 to 96 hours (2026-11-24). Work that it defers is planned in the later phases only where the program names it.
+
 ## Product requirements
 
 A writer preparing a short report needs to see where pages end while editing, resume a local draft, and hand over an editable document that opens in LibreOffice Writer. This local workbench combines an ordered block editor, an A4 preview derived from the same draft, and specific feedback when an imported document is outside the supported format.
