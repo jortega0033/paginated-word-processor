@@ -8,7 +8,7 @@ Only a runnable scaffold exists (help, version and smoke tests); the product is 
 - [Technical design](docs/PROJECT-PLAN.md#technical-design)
 - [Implementation backlog and epic](https://github.com/jortega0033/paginated-word-processor/issues)
 
-Estimated implementation and verification effort is 20–31 engineering hours.
+The first plan of phase 1 said 20–31 engineering hours. Its open tickets, with tests and review, add up to 66 to 96 hours; the whole program is larger and is described below. All figures are estimates.
 
 ## Program goal
 
